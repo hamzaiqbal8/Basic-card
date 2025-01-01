@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="base-card-container">
+      <div class="base-card-wrapper">
+        <div class="base-card-left-side-container">
+          <div class="base-card-left-side-wrapper">
+            <img src="./images/logo.svg" alt="" />
+            <div>
+              <h2>WE,RE</h2>
+              <h3>COMING <br />SOON</h3>
+              <div class="mobile-sreen-image">
+                <img src="./images/hero-desktop.jpg" alt="" />
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              natus fugit atque? Doloremque dolor ea voluptate officiis ut
+              totam.
+            </p>
+            <div class="input-container">
+              <form action="" id="signup-form" validate="validate">
+                <input
+                  type="email"
+                  id="email-input"
+                  placeholder="Email Address"
+                  required
+                />
+
+                <span id="errorMsg"></span>
+                <button>
+                  <img src="./images/icon-arrow.svg" alt="" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="base-card-right-side-container">
+          <div class="base-card-right-side-wrapper">
+            <div class="right-side-image-wrapper">
+              <img src="./images/hero-desktop.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let signupForm = document.querySelector("form#signup-form");
+
+      signupForm.addEventListener("submit", (e) => {
+        e.preventDefault()
+        redirectToIntendedPage();
+      });
+
+      function redirectToIntendedPage() {
+        window.location.href = "https://hamzaiqbal8.github.io/Comming-page/"
+      }
+    </script>
+  </body>
+</html>
